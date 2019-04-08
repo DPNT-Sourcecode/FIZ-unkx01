@@ -14,6 +14,7 @@ class FizzBuzz
       @result << "buzz"
     else
       @result << number
+      return @result[0]
     end
     return @result.join()
   end
@@ -37,4 +38,5 @@ class FizzBuzz
   end
 
 end
+
 
