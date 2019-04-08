@@ -58,7 +58,7 @@ class FizzBuzz
         @deluxe = true
       end
     else
-      if number % 1.times(number.to_s.split.length + 1) == 0 && number > 10
+      if number/10.floor%11 == 0 && number > 10
         @deluxe = true
       end
     end
@@ -72,4 +72,5 @@ class FizzBuzz
   end
 
 end
+
 
