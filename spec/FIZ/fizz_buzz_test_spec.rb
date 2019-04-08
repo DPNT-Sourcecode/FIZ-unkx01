@@ -17,14 +17,30 @@ require './lib/solutions/FIZ/fizz_buzz.rb'
 
 describe FizzBuzz do
 
-  fizzbuzz = FizzBuzz.new
+  it 'returns 1 when 1' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(1)).to eq(1)
+  end
 
-  it 'returns buzz when 5' do
-    expect(fizzbuzz.fizz_buzz(5)).to eq("buzz")
+  it 'returns 2 when 2' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(2)).to eq(2)
+  end
+
+  it 'returns fizz when 3' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(3)).to eq("fizz")
   end
 
   it 'returns buzz when 5' do
-    expect(fizzbuzz.fizz_buzz(6)).to eq("fizz")
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(5)).to eq("buzz")
+  end
+
+  it 'returns fizz when 6' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(6)).to eq("fizz")
   end
 
 end
+
