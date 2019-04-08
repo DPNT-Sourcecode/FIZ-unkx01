@@ -1,4 +1,5 @@
 # noinspection RubyResolve,RubyResolve
+require '../lib/FIZ/fizz_buzz'
 require_relative '../test_helper'
 # require 'logging'
 #
@@ -15,8 +16,11 @@ require_relative '../test_helper'
 # end
 
 describe Fizzbuzz do
-
-  expect(fizzbuzz(5)).to eq("buzz")
+  
+  it 'returns buzz when 5' do
+    expect(fizzbuzz(5)).to eq("buzz")
+  end
 
 end
+
 
