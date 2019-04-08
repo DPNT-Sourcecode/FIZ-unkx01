@@ -58,7 +58,7 @@ class FizzBuzz
         @deluxe = true
       end
     else
-      if number % 11 == 5 && number > 10
+      if number % 11 == 0 && number > 10
         @deluxe = true
       end
     end
@@ -72,6 +72,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
