@@ -3,6 +3,7 @@ class FizzBuzz
 
   @fizz = false
   @buzz = false
+  @deluxe = false
 
   def return_what(number)
     @result = []
@@ -12,6 +13,8 @@ class FizzBuzz
       @result << "fizz"
     elsif @buzz == true
       @result << "buzz"
+    elsif @deluxe == true
+      @result << "deluxe"
     else
       @result << number
       return @result[0]
@@ -31,12 +34,20 @@ class FizzBuzz
     end
   end
 
+  def test_deluxe(number)
+    if number % 5 == 0 || number.to_s.include?('5')
+      @buzz = true
+    end
+  end
+
   def fizz_buzz(number)
     test_3(number)
     test_5(number)
+    test_deluxe(number)
     return_what(number)
   end
 
 end
+
 
 
