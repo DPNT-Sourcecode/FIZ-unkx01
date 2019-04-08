@@ -15,11 +15,11 @@ require './lib/solutions/FIZ/fizz_buzz.rb'
 #
 # end
 
-# describe FizzBuzz do
-#
-#   it 'returns buzz when 5' do
-#     fizzbuzz = FizzBuzz.new
-#     expect(fizzbuzz.fizz_buzz(5)).to eq("buzz")
-#   end
-#
-# end
+describe FizzBuzz do
+
+  it 'returns buzz when 5' do
+    fizzbuzz = FizzBuzz.new
+    expect(fizzbuzz.fizz_buzz(5)).to eq("buzz")
+  end
+
+end
