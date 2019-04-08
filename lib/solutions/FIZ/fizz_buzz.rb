@@ -5,6 +5,8 @@ class FizzBuzz
   @buzz = false
   @deluxe = true
 
+  @deluxe_string = ''
+
   def return_what(number)
     @result = []
     if @fizz == true && @buzz == true
@@ -35,11 +37,11 @@ class FizzBuzz
   end
 
   def all_digits_match(number)
-    deluxe_string = number.to_s.split
-    if deluxe_string.length > 1
-      deluxe_string.each do |num|
-        p deluxe_string[0]
-        if num != deluxe_string[0]
+    @deluxe_string = number.to_s.split
+    if @deluxe_string.length > 1
+      @deluxe_string.each do |num|
+        p @deluxe_string[0]
+        if num != @deluxe_string[0]
           @deluxe = false
         end
       end
@@ -54,10 +56,3 @@ class FizzBuzz
   end
 
 end
-
-
-
-
-
-
-
