@@ -18,10 +18,12 @@ require_relative '../test_helper'
 describe FizzBuzz do
 
   it 'returns buzz when 5' do
-    expect(fizzbuzz(5)).to eq("buzz")
+    fizzbuzz = FizzBuzz.new
+    expect(fizzbuzz.fizz_buzz(5)).to eq("buzz")
   end
 
 end
+
 
 
 
