@@ -3,7 +3,7 @@ class FizzBuzz
 
   @fizz = false
   @buzz = false
-  @deluxe = true
+  @deluxe = false
 
   @deluxe_string = ''
 
@@ -47,12 +47,12 @@ class FizzBuzz
     #   end
     # end
     if number.to_s.split.length.even?
-      if number % 11 != 0
-        @deluxe = false
+      if number % 11 == 0
+        @deluxe = true
       end
     else
-      if number % 11 != 5
-        @deluxe = false
+      if number % 11 == 5
+        @deluxe = true
       end
     end
   end
@@ -65,4 +65,5 @@ class FizzBuzz
   end
 
 end
+
 
