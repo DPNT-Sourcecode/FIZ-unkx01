@@ -17,12 +17,13 @@ class FizzBuzz
   end
 
   def fizz_buzz(number)
-    if number % 3 == 0 || number.include?(3)
+    if number % 3 == 0 || number.to_s.include?('3')
       @fizz = true
-    elsif number % 5 == 0 || number.include?(5)
+    elsif number % 5 == 0 || number.to_s.include?('5')
       @buzz = true
     end
     return_what(number)
   end
 
 end
+
