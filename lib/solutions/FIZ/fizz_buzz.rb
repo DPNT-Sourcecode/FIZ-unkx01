@@ -15,8 +15,9 @@ class FizzBuzz
       @result << "fizz"
     elsif @buzz == true
       @result << "buzz"
-    elsif @deluxe == true
-      @result << "deluxe"
+    end
+    if @deluxe == true
+      @result << " deluxe"
     else
       @result << number
       return @result[0]
@@ -47,11 +48,11 @@ class FizzBuzz
     #   end
     # end
     if number.to_s.split.length.even?
-      if number % 11 == 0
+      if number % 11 == 0 && number > 10
         @deluxe = true
       end
     else
-      if number % 11 == 5
+      if number % 11 == 5 && number > 10
         @deluxe = true
       end
     end
@@ -65,5 +66,6 @@ class FizzBuzz
   end
 
 end
+
 
 
