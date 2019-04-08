@@ -8,7 +8,9 @@ class FizzBuzz
   @deluxe_string = ''
 
   def return_what(number)
+
     @result = []
+
     if @fizz == true && @buzz == true
       @result << "fizz buzz"
     elsif @fizz == true
@@ -16,9 +18,12 @@ class FizzBuzz
     elsif @buzz == true
       @result << "buzz"
     end
+
     if @deluxe == true
       @result << " deluxe"
-    else
+    end
+
+    if
       @result << number
       return @result[0]
     end
@@ -66,6 +71,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
