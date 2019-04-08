@@ -35,8 +35,8 @@ class FizzBuzz
   end
 
   def test_deluxe(number)
-    if number % 5 == 0 || number.to_s.include?('5')
-      @buzz = true
+    if number > 10 && number.to_s.include?('5')
+      @deluxe = true
     end
   end
 
@@ -48,6 +48,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
