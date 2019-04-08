@@ -1,15 +1,22 @@
 # noinspection RubyResolve,RubyResolve
 require_relative '../test_helper'
-require 'logging'
+# require 'logging'
+#
+# Logging.logger.root.appenders = Logging.appenders.stdout
+#
+# require_solution 'FIZ'
+#
+# class ClientTest < Minitest::Test
+#
+#   def test_one
+#     assert_equal 1, One.new.apply
+#   end
+#
+# end
 
-Logging.logger.root.appenders = Logging.appenders.stdout
+describe Fizzbuzz do
 
-require_solution 'TST'
-
-class ClientTest < Minitest::Test
-
-  def test_one
-    assert_equal 1, One.new.apply
-  end
+  expect(fizzbuzz(5)).to eq("buzz")
 
 end
+
