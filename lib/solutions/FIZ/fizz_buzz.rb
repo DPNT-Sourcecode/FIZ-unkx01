@@ -3,7 +3,7 @@ class FizzBuzz
 
   @fizz = false
   @buzz = false
-  @deluxe = false
+  @deluxe = true
 
   @deluxe_string = ''
 
@@ -72,4 +72,5 @@ class FizzBuzz
   end
 
 end
+
 
