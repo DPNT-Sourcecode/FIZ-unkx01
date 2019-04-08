@@ -44,24 +44,24 @@ class FizzBuzz
   end
 
   def all_digits_match(number)
-    @deluxe_string = number.to_s.split
-    if @deluxe_string.length > 1
-      @deluxe_string.each do |num|
-        p @deluxe_string[0]
-        if num != @deluxe_string[0]
-          @deluxe = false
-        end
-      end
-    end
-    # if number.to_s.split.length.odd?
-    #   if number % 11 == 0 && number > 10
-    #     @deluxe = true
-    #   end
-    # else
-    #   if number % 1.times(number.to_s.split.length + 1) == 0 && number > 10
-    #     @deluxe = true
+    # @deluxe_string = number.to_s.split
+    # if @deluxe_string.length > 1
+    #   @deluxe_string.each do |num|
+    #     p @deluxe_string[0]
+    #     if num != @deluxe_string[0]
+    #       @deluxe = false
+    #     end
     #   end
     # end
+    if number.to_s.split.length.odd?
+      if number % 11 == 0 && number > 10
+        @deluxe = true
+      end
+    else
+      if number % 1.times(number.to_s.split.length + 1) == 0 && number > 10
+        @deluxe = true
+      end
+    end
   end
 
   def fizz_buzz(number)
@@ -72,3 +72,4 @@ class FizzBuzz
   end
 
 end
+
