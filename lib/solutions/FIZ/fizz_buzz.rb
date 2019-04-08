@@ -37,13 +37,22 @@ class FizzBuzz
   end
 
   def all_digits_match(number)
-    @deluxe_string = number.to_s.split
-    if @deluxe_string.length > 1
-      @deluxe_string.each do |num|
-        p @deluxe_string[0]
-        if num != @deluxe_string[0]
-          @deluxe = false
-        end
+    # @deluxe_string = number.to_s.split
+    # if @deluxe_string.length > 1
+    #   @deluxe_string.each do |num|
+    #     p @deluxe_string[0]
+    #     if num != @deluxe_string[0]
+    #       @deluxe = false
+    #     end
+    #   end
+    # end
+    if number.to_s.split.length.even?
+      if number % 11 != 0
+        @deluxe = false
+      end
+    else
+      if number % 11 != 5
+        @deluxe = false
       end
     end
   end
@@ -56,3 +65,4 @@ class FizzBuzz
   end
 
 end
+
