@@ -52,7 +52,23 @@ describe FizzBuzz do
     expect(f.fizz_buzz(11)).to eq("deluxe")
   end
 
+  it 'returns deluxe when 111' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(11)).to eq("fizz deluxe")
+  end
+
+  it 'returns fizz deluxe when 33' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(11)).to eq("fizz deluxe")
+  end
+
+  it 'returns buzz deluxe when 55' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(11)).to eq("buzz deluxe")
+  end
+
 end
+
 
 
 
