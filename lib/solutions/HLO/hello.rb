@@ -1,10 +1,8 @@
 # noinspection RubyUnusedLocalVariable
 class Hello
 
-  def hello
+  def hello(friend_name)
     return "Hello, World!"
   end
 
 end
-
-
