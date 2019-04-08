@@ -5,7 +5,7 @@ class FizzBuzz
   @buzz = false
 
   def return_what(number)
-    if @fizz == true && @ buzz == true
+    if @fizz == true && @buzz == true
       return "fizz buzz"
     elsif @fizz == true
       return "fizz"
@@ -17,16 +17,14 @@ class FizzBuzz
   end
 
   def fizz_buzz(number)
-    if number % 3 == 0 && number % 5 == 0
-      return "fizz buzz"
-    elsif number % 3 == 0
-      return "fizz"
-    elsif number % 5 == 0
-      return "buzz"
-    else
-      return number
+    if number % 3 == 0 || number.include?(3)
+      @fizz = true
+    elsif number % 5 == 0 || number.include?(5)
+      @buzz = true
     end
+    return_what(number)
   end
 
 end
+
 
