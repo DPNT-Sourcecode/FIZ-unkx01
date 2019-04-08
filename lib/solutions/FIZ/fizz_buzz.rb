@@ -20,14 +20,14 @@ class FizzBuzz
     end
 
     if @deluxe == true
-      @result << " deluxe"
+      @result << "deluxe"
     end
 
     if @result == []
       @result << number
       return @result[0]
     else
-      return @result.join()
+      return @result.join(' ')
     end
   end
 
@@ -72,6 +72,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
