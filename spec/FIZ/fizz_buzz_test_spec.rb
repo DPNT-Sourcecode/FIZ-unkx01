@@ -42,5 +42,11 @@ describe FizzBuzz do
     expect(f.fizz_buzz(6)).to eq("fizz")
   end
 
+  it 'returns fizz buzz when 15' do
+    f = FizzBuzz.new
+    expect(f.fizz_buzz(15)).to eq("fizz buzz")
+  end
+
 end
+
 
