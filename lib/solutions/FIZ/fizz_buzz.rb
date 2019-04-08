@@ -35,10 +35,12 @@ class FizzBuzz
   end
 
   def all_digits_match(number)
-    deluxe_string = number.to_s.split
-    deluxe_string.each do |num|
-      if num != deluxe_string[0]
-        @deluxe = false
+    if number > 10
+      deluxe_string = number.to_s.split
+      deluxe_string.each do |num|
+        if num != deluxe_string[0]
+          @deluxe = false
+        end
       end
     end
   end
@@ -57,6 +59,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
