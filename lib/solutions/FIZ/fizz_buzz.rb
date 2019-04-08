@@ -23,11 +23,12 @@ class FizzBuzz
       @result << " deluxe"
     end
 
-    if
+    if @result == []
       @result << number
       return @result[0]
+    else
+      return @result.join()
     end
-    return @result.join()
   end
 
   def test_3(number)
@@ -52,7 +53,7 @@ class FizzBuzz
     #     end
     #   end
     # end
-    if number.to_s.split.length.even?
+    if number.to_s.split.length.odd?
       if number % 11 == 0 && number > 10
         @deluxe = true
       end
@@ -71,6 +72,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
