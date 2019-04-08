@@ -4,16 +4,19 @@ class FizzBuzz
   @fizz = false
   @buzz = false
 
+  @result = []
+
   def return_what(number)
     if @fizz == true && @buzz == true
-      return "fizz buzz"
+      @result += "fizz buzz"
     elsif @fizz == true
-      return "fizz"
+      @result += "fizz"
     elsif @buzz == true
-      return "buzz"
+      @result += "buzz"
     else
-      return number
+      @result += number
     end
+    return @result
   end
 
   def test_3(number)
@@ -35,4 +38,3 @@ class FizzBuzz
   end
 
 end
-
