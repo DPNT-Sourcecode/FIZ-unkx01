@@ -49,7 +49,6 @@ describe FizzBuzz do
 
   it 'returns deluxe when 11' do
     f = FizzBuzz.new
-    p @deluxe_string
     expect(f.fizz_buzz(11)).to eq("deluxe")
   end
 
@@ -74,3 +73,4 @@ describe FizzBuzz do
   end
 
 end
+
